@@ -22,16 +22,18 @@ header{
 header .top-header{
     display: flex;
     flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
 }
 
 header .top-header .logo{
-    width: 40vw;
+    width: 50%;
 }
 
 header .top-header .form{
     display: flex;
     margin-top: 10px;
-    width: 40vw;
+    width: 50%;
     margin: auto;
 }
 

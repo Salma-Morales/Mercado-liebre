@@ -40,142 +40,57 @@ rel="stylesheet" />
 </header>
 <section><img class="banner" src="./images/img-home-banner.jpg" width="360px"alt="banner de anuncios"></section>
 <main>
-   <section>
-       <div class="last-visit">
-        <h2>Basado en tu última visita</h2>
-        <div class="products">
-            <article>
-                <a href="#">
-                   <div>
-                       <img src="./images/img-cafetera-moulinex.jpg" alt="una cafetera">
-                       <div class="main-description">
-                       <i class="fas fa-truck"></i>
-                       <div class="pre-disc">
-                       <p class="precios">$6.770</p>
-                       <p class="descuento">40% OFF</p>
-                       </div>
-                       <p class="descripcion">Cafetera Moulinex</p>
-                       </div>
-                   </div>
-                </a>
-                </article>
-                <article>
-                <a href="#">
-                   <div>
-                       <img src="./images/img-macbook-pro-2019.jpg" alt="">
-                       <div class="main-description">
-                       <i class="fas fa-truck"></i>
-                       <div class="pre-disc">
-                       <p class="precios">$230.000</p>
-                       <p class="descuento">20% off</p>
-                    </div>
-                       <p class="descripcion">MacBook Pro 2019</p>
-                    </div>
-                   </div>
-                </a>
-                </article>
-                <article>
-                <a href="#">
-                   <div>
-                       <img src="./images/img-samsung-galaxy-s10.jpg" alt="">
-                       <div class="main-description">
-                       <i class="fas fa-truck"></i>
-                       <div class="pre-disc">
-                       <p class="precios">$70.500</p>
-                       <p class="descuento">10% off</p>
-                       </div>
-                       <p class="descripcion">Samsung Galaxy S10</p>
-                    </div>
-                   </div>
-                </a>
-                </article>
-                <article>
-                <a href="#">
-                   <div>
-                       <img src="./images/img-tv-samsung-smart.jpg" alt="">
-                       <div class="main-description">
-                        <i class="fas fa-truck"></i>
-                        <div class="pre-disc">
-                       <p class="precios">$23.200</p>
-                       <p class="descuento">5% off</p>
-                       </div> 
-                       <p class="descripcion">SmartTv Samsung 43"</p>
-                    </div>
-                    </div>
-                   </div>
-                </a>
-                </article>
-        </div>
-       </div>
-   </section>
-   <section>
-    <div class="last-visit">
-     <h2>Ofertas</h2>
-     <div class="products">
-         <article>
-             <a href="#">
-                <div>
-                    <img src="./images/img-cafetera-moulinex.jpg" alt="una cafetera">
-                    <div class="main-description">
-                    <i class="fas fa-truck"></i>
-                    <div class="pre-disc">
-                    <p class="precios">$6.770</p>
-                    <p class="descuento">40% OFF</p>
-                    </div>
-                    <p class="descripcion">Cafetera Moulinex</p>
-                    </div>
-                </div>
-             </a>
-             </article>
-             <article>
-             <a href="#">
-                <div>
-                    <img src="./images/img-macbook-pro-2019.jpg" alt="">
-                    <div class="main-description">
-                    <i class="fas fa-truck"></i>
-                    <div class="pre-disc">
-                    <p class="precios">$230.000</p>
-                    <p class="descuento">20% off</p>
-                 </div>
-                    <p class="descripcion">MacBook Pro 2019</p>
-                 </div>
-                </div>
-             </a>
-             </article>
-             <article>
-             <a href="#">
-                <div>
-                    <img src="./images/img-samsung-galaxy-s10.jpg" alt="">
-                    <div class="main-description">
-                    <i class="fas fa-truck"></i>
-                    <div class="pre-disc">
-                    <p class="precios">$70.500</p>
-                    <p class="descuento">10% off</p>
-                    </div>
-                    <p class="descripcion">Samsung Galaxy S10</p>
-                 </div>
-                </div>
-             </a>
-             </article>
-             <article>
-             <a href="#">
-                <div>
-                    <img src="./images/img-tv-samsung-smart.jpg" alt="">
-                    <div class="main-description">
-                     <i class="fas fa-truck"></i>
-                     <div class="pre-disc">
-                    <p class="precios">$23.200</p>
-                    <p class="descuento">5% off</p>
-                    </div> 
-                    <p class="descripcion">SmartTv Samsung 43"</p>
-                 </div>
-                 </div>
-                </div>
-             </a>
-             </article>
-     </div>
+  <form action="/registro" method="post">
+    <div class="reg-labels">
+        <label for="nombre-apellido">Nombre y apellido</label>
+        <input type="text" name="nombre-apellido" id="nombre-apellido">
     </div>
-</section>
+    <div class="reg-labels">
+        <label for="nombre-usuario">Nombre de usuario</label>
+        <input type="text" name="nombre-usuario" id="nombre-usuario">
+    </div>
+    <div class="reg-labels">
+        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">
+    </div>
+    <div class="reg-labels">
+        <label for="domicilio">Domicilio</label>
+        <input type="text" name="domicilio" id="domicilio">
+    </div>
+    <div class="reg-labels">
+        <label for="perfil-usuario">Perfil del usuario</label>
+        <input type="radio" name="perfil-usuario" value="Comprador">
+        <input type="radio" name="perfil-usuario" value="Vendedor">
+    </div>
+    <div class="reg-labels">
+        <label for="intereses">intereses</label>
+        <input type="checkbox" name="intereses" value="Electro">
+        <input type="checkbox" name="intereses" value="Moda">
+        <input type="checkbox" name="intereses" value="Hogar">
+        <input type="checkbox" name="intereses" value="Juguetería">
+        <input type="checkbox" name="intereses" value="Vida Sana">
+    </div>
+    <div class="reg-labels">
+        <label for="foto-usuario">Foto de perfil</label>
+        <input type="file" name="foto-usuario" accept=".jpg">
+    </div>
+    <div class="reg-labels">
+        <label for="password">Contraseña</label><div class="buttons">
+        <input type="submit">
+    </div>
+        <input type="password" name="password">
+    </div>
+    <div class="reg-labels">
+        <label for="password-confirm">Confirmar contraseña</label>
+        <input type="password" name="password-confirm">
+    </div>
+    <div class="buttons">
+        <input type="submit">
+    </div>
+    <div class="buttons">
+        <input type="reset">
+    </div>
+  </form>
 </main>
 <footer>
     <div class="footer-divs">
