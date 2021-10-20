@@ -21,25 +21,47 @@ header{
 
 header .top-header{
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    justify-content: center;
+    max-width: 70vw;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-dev{
+    display: flex;
+    
 }
 
 header .top-header .logo{
-    width: 50%;
+    width: 40%;
+    
+    
+}
+
+.form-space{
+    width: 40%;
+
 }
 
 header .top-header .form{
     display: flex;
-    margin-top: 10px;
-    width: 50%;
-    margin: auto;
+    
 }
 
-header .top-header p{
+#search-bar{
+    width: 110px;
+}
+
+/* El logo y el form no tiene 50% de width para adaptarse mejor a dispositivos moviles pequeños y para dejar espacio para el margen*/
+
+.cuotas-mensaje{
     width: 80vw;
     margin: auto;
+    margin-bottom: 8px;
+}
+
+.cuotas-mensaje p{
+    font-size: 13px;
 }
 
 header nav li a{
@@ -112,9 +134,13 @@ main .last-visit .products article{
     border-radius: 50%;
     position: absolute;
     right: 20px;
-    bottom: 100px;
-    
+    bottom: 70px;
+    transition: transform 1000ms;
     }
+
+.main-description i:hover{
+    transform: rotate(90deg);
+}
 
 
 .descuento{
@@ -152,17 +178,70 @@ h2{
     padding: 15px;
 }
 
+/*registro*/
+label{
+display: block;
+padding: 8px;
+font-weight: bold;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0px;
+  }  
+
+.text-area{
+    border: none;
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+label{
+    font-size: 16px;
+}
+.option-text{
+    font-weight: normal;
+}
+
+.buttons{
+    border: none;
+    margin: 8px;
+    padding: 4px 7px;
+    border-radius: 5px;
+    background-color: #1259c3;
+    font-family: 'Roboto', sans-serif;
+    color: #ebebeb;
+    font-size: 15px;
+}
+    
+#send-button:hover{
+    background-color: #0022AA;
+}
+
+
 /*footer*/
 
+
+
+.footer-main{
+    display: flex;
+    padding: 30px 0px;
+}
 .footer-divs i{
     margin: auto;
     text-align: center;
     color: #1259c3;
+    font-size: 2em;
 }
 
-.footer-divs i{
-    color: #1259c3;
-    font-size: 2em;
+
+
+
+.footer-divs i:hover{
+    color: #EAC926;
+    
 }
 
 .footer-divs{
@@ -173,7 +252,7 @@ h2{
 @media (min-width: 600px) {
 
     .top-header{
-        justify-content: space-around;
+        justify-content: space-between;
 
     }
 
@@ -199,15 +278,28 @@ h2{
         display: flex;
     }
 
+    header nav ul li{
+        padding: 8px;
+    }
+
 
     main .last-visit .products article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 35%;
         margin: 20px;
-
+        transition: all 800ms;
+        
 
    } 
-   .descripcion{
+
+   main .last-visit .products article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+   }
+
+
+
+
+   main .last-visit .products article:hover .descripcion{
     display: block;
 }
 
@@ -275,10 +367,20 @@ main .last-visit .products img{
 
 
     main .last-visit .products article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         max-width: 18%;
         margin: 20px;
    } 
+
+   .main-description i:hover{
+    transform: rotate(90deg);
+}
+
+
+   main .last-visit .products article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+   }
+
 
    .burger-menu{
        display: none;

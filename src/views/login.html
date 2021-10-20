@@ -40,18 +40,21 @@ rel="stylesheet" />
 </header>
 <main>
     <form action="GET">
+        <div class="container">
         <div>
             <label for="user-name">Nombre de usuario</label>
-            <input type="text" name="user-name" required>
+            <input class="text-area" type="text" name="user-name" required>
         </div>
         <div>
             <label for="password">Contraseña</label>
-            <input type="password" name="password" required>
+            <input class="text-area" type="password" name="password" required>
         </div>
-        <input type="submit" name="submit">
+        <input id="send-button" class="buttons" type="submit" name="submit">
+    </div>
     </form>
 </main>
 <footer>
+    <div class="footer-main">
     <div class="footer-divs">
         <i class="fas fa-credit-card"></i>
         <h3>Paga con tarjeta o en efectivo</h3>
@@ -67,6 +70,7 @@ rel="stylesheet" />
         <h3>Seguridad de principio a fin</h3>
         <p>¿No te gusta? !Devolvelo! en MercadoLiebre no hay nada que no puedas hacer porque siempre estás protegid@</p>
     </div>
+</div>
     <p>CopyRight 1999-2021 MercadoLiebre S.R.L</p>
 </footer>
 </html>
