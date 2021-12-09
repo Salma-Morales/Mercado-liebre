@@ -105,6 +105,10 @@ main section{
     margin: 0 auto;
 }
 
+main section h2{
+    font-weight: lighter;
+}
+
 
 
 

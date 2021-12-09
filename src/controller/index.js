@@ -1,9 +1,9 @@
-const productsUse = require('../model/model-index');
-const products = productsUse.getCharacters();
+const productsUse = require('../model/products-model');
+const products = productsUse.getProducts();
 
 const mainController = {
     index: function (req, res){
-        res.render('index', {products: products});
+        res.render('home');
     },
     register: function (req, res){
         res.render('register');

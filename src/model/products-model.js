@@ -18,7 +18,7 @@ const idGen = function (){
 };
 
 const productsModel = {
-  getproducts: function () {
+  getProducts: function () {
     return JSON.parse(
       fs.readFileSync(productsPath, {
         encoding: "utf8",

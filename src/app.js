@@ -1,26 +1,16 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = process.env.PORT || 4000
+const routes = require('./routes/products.routes');
+const port = process.env.PORT || 3000
 app.use(express.static(path.join(__dirname, './public')))
 
- app.get(('/'), (req, res) =>{
-     res.sendFile(path.join(__dirname, '/views/home.html'));
+app.set('view engine', 'ejs');
+app.set('views', './src/views')
 
- })
-
- app.get(('/registro'), (req, res) =>{
-    res.sendFile(path.join(__dirname, '/views/register.html'));
-
-})
-
-app.get(('/login'), (req, res) =>{
-    res.sendFile(path.join(__dirname, '/views/login.html'));
-
-})
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use("/", routes);
 
 
-
- app.listen(port, ()=> {
-    console.log('Servidor corriendo');
-})
+app.listen(port,() => {console.log(`Server running on port ${port}`)});
