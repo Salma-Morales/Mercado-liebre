@@ -7,431 +7,106 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style: none;
-    color: black;
     
 }
 
 /*header*/
 
 header{
-    background-color: #EAC926;
+    background-color: #fff159;
     padding-bottom: 15px;
+    width: 100%;
+    box-shadow: 1px 0px 2px 0px rgba(56, 56, 56, 0.75);
+}
 
+header .main-header{
+    display: block;
+    width: 60%;
+    margin: auto;
+   
 }
 
 header .top-header{
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 8px;
-    justify-content: center;
-    align-items: center;
-    
+    padding-top: 10px;
+    justify-content: start;
 }
 
-.top-dev{
-    display: flex;
-    
-}
-
-header .top-header .logo{
-    width: 50%;
-    
-    
+header img{
+    width: 140px;
 }
 
 .form-space{
-    width: 50%;
-
+    margin: 0 38px;
 }
 
-header .top-header .form{
+#search-bar {
+    color: rgb(168, 167, 167);
+    border: none;
+    width: 550px;
+    height: 38px;
+    padding-left: 8px;
+    right: 30px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: lighter;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    
+}
+
+.form-space form button{
+    padding-left: 8px;
+    font-size: 14px;
+    border: none;
+    background: none;
+    position: relative;
+    right: 40px;
+    color: rgb(163, 163, 163);
+    border-left: 1px solid rgb(185, 185, 185);
+}
+
+nav {
     display: flex;
-    
+    justify-content: space-between;
 }
 
-#search-bar{
-    border: none;
-    padding: 3px;
-    border-radius: 5px;
+nav ul {
+    display: flex;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
-.search-submit-button{
-    padding: 2px 5px;
-    margin: 3px;
-    border: none;
-    background-color: #1259c3;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-submit-button i{
-    color: #ebebeb;
-    
-}
-
-
-.cuotas-mensaje{
-    width: 80vw;
-    margin: auto;
-    margin-bottom: 8px;
-}
-
-.cuotas-mensaje p{
+nav ul li{
+    display: flex;
     font-size: 13px;
+    margin-top: 20px;
+    color: rgb(95, 93, 75);
+    margin: 0 8px;
 }
 
-header nav li a{
-    display: block;
+nav ul li a{
+    color: rgb(95, 93, 75);
+
 }
-
-header .burger-menu{
-    width: 30px;
-    height: 30px;
-    margin: auto;
-}
-
-header .burger-menu i{
-    color: blanchedalmond;
-    background-color: #1259c3;
-    padding: 6px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-header nav{
-    display: none;
-}
-
-/*banner de anuncios*/
-
-.banner{
-    width: 100vw;
-}
-
-/*main*/
 
 main {
-    background: gainsboro;
-    padding-bottom: 20px;
+    background-color: #ebebeb;
 }
 
-main .last-visit{
-    margin: auto;
-}
-
-main .last-visit .products{
-    width: 90%;
-    margin: auto;
-    
-}
-
-main .last-visit .products img{
-    max-width: 90%;
+.banner img{
     display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
-main .last-visit .products article{
-    margin-top: 10px;
-    background-color: white;
-    padding: 10px;
-    position: relative;
-}
-
-.main-description i{
+main section{
+    width: 60%;
     display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    color: #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    bottom: 70px;
-    transition: transform 1000ms;
-    }
-
-.main-description i:hover{
-    transform: rotate(90deg);
-}
-
-
-.descuento{
-    font-size: 16px;
-    width: 70%;
-
-}
-
-.descripcion{
-    font-size: 16px;
-    display: none;
-}
-
-.precios{
-    font-size: 18px;
-    color: #39b54a;
-    padding-right: 7px;
-    width: 30%;
-}
-
-.pre-disc{
-    display: inline-block;
-    /*margin-bottom: 15px;*/
-}
-
-h2{
-    font-size: 24px;
-    text-align: center;
-    padding: 15px;
-}
-
-.main-description{
-    border-top: 1px solid #ebebeb;
-    display: block;
-    padding: 15px;
-}
-
-/*registro*/
-label{
-display: block;
-padding: 8px;
-font-weight: bold;
-}
-
-.container {
-    display: block;
-    margin: auto;
-    text-align: center;
-    padding: 30px 0px;
-  }  
-
-.text-area{
-    border: none;
-    height: 20px;
-    width: 200px;
-    border-radius: 5px;
-}
-label{
-    font-size: 16px;
-}
-.option-text{
-    font-weight: normal;
-}
-
-.buttons{
-    border: none;
-    margin: 8px;
-    padding: 4px 7px;
-    border-radius: 5px;
-    background-color: #1259c3;
-    font-family: 'Roboto', sans-serif;
-    color: #ebebeb;
-    font-size: 15px;
-}
-    
-#send-button:hover{
-    background-color: #0022AA;
-}
-
-
-/*footer*/
-
-
-
-.footer-main{
-    display: flex;
-    padding: 30px 0px;
-}
-.footer-divs i{
-    margin: auto;
-    text-align: center;
-    color: #1259c3;
-    font-size: 2em;
+    margin: 0 auto;
 }
 
 
 
-
-.footer-divs i:hover{
-    color: #EAC926;
-    
-}
-
-.footer-divs{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-@media (min-width: 600px) {
-
-    .top-header{
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-        flex-wrap: nowrap;
-
-    }
-
-
-    header .top-header .logo{
-        width: 200px;
-        margin-right: 30px;
-    }
-
-    .form-space{
-        width: 30%;
-    }
-
-    .cuotas-mensaje{
-        margin: 8px 0px;
-        text-align: center;
-    }
-
-    header nav{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    header nav ul{
-        display: flex;
-    }
-
-    header nav ul li{
-        padding: 8px;
-        font-size: 14px;
-    }
-
-
-    main .last-visit .products article{
-        width: 35%;
-        margin: 20px;
-        transition: all 800ms;
-        
-
-   } 
-
-   main .last-visit .products article:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-
-   }
-
-
-
-
-   main .last-visit .products article:hover .descripcion{
-    display: block;
-}
-
-   .burger-menu{
-    display: none;
-}
-
-main .last-visit .products{
-    width: 90%;
-    
-    
-}
-
-main .last-visit .products img{
-    max-width: 90%;
-    
-}
-
-.products{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-}
-
-
-
-
-@media (min-width: 860px) {
-
-    
-
-    .top-header{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-    }
-
-    header .top-header .logo{
-        width: 200px;
-        margin-right: 20px;
-        
-    }
-
-    .form-space{
-        width: 30%;
-    }
-
-    .cuotas-mensaje{
-        width: 30%;
-        
-    }
-
-    header div{
-        display: flex;
-    }    
-
-    header nav{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    header nav ul{
-        display: flex;
-    }
-
-    header nav ul li{
-        padding: 8px;
-    }
-
-
-    main .last-visit .products article{
-        max-width: 18%;
-        margin: 20px;
-   } 
-
-   .main-description i:hover{
-    transform: rotate(90deg);
-}
-
-
-   main .last-visit .products article:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-
-   }
-
-
-   .burger-menu{
-       display: none;
-   }
-
-   main .last-visit .products{
-    width: 90%;
-    
-    
-}
-
-   main .last-visit .products img{
-    max-width: 90%;
-    
-   }
-
-.products{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-}
 
 
 
