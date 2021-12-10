@@ -184,8 +184,24 @@ main section h2{
     display: none;
 }
 
+/* register styles */
+
+.form-container{
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    width: 50%;
+    
+}
 
 
+.reg-labels{
+    margin: 10px;
+}
+
+.main-register{
+    padding: 70px;
+}
 
 
 
