@@ -3,7 +3,7 @@ const products = productsUse.getProducts();
 
 const mainController = {
     index: function (req, res){
-        res.render('home');
+        res.render('home', {products: products});
     },
     register: function (req, res){
         res.render('register');
@@ -14,7 +14,7 @@ const mainController = {
             image: req.file,
         }
         productsUse.create(newCharacter);
-        res.render('register')
+       // res.render('register')
     }
 }
 
